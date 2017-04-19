@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         toast_container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 scrolllin.fullScroll(View.FOCUS_DOWN);
+                mExpanded = !mExpanded;
+                toast_content.startAnimation(animFadeout);
             }
         });
         scrolllin.setOnScrollChangeListener(new View.OnScrollChangeListener() {
