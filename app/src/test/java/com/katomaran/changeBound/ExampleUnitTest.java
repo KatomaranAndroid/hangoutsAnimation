@@ -1,4 +1,4 @@
-package com.viralandroid.chartmessangingappui;
+package com.katomaran.changeBound;
 
 import org.junit.Test;
 

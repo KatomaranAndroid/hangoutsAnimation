@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#f9f7f7"
     android:orientation="vertical"
-    tools:context="com.viralandroid.chartmessangingappui.MainActivity">
+    tools:context="com.katomaran.changeBound.MainActivity">
 
     <ScrollView
         android:id="@+id/scrolllin"
@@ -54,7 +54,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/linjump"
+            android:id="@+id/toast_container"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
@@ -63,7 +63,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/linimg"
+                android:id="@+id/toast_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -78,12 +78,13 @@
                     android:src="@drawable/ic_arrow_downward_black_24dp" />
 
                 <TextView
-                    android:id="@+id/lintxt"
+                    android:id="@+id/toast_msg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textColor="@android:color/white"
                     android:text=" Jump to latest"
+                    android:textSize="10dp"
                     android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
